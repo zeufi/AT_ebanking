@@ -5,7 +5,7 @@
     <listeners>
         <listener class-name="Utilities.Reporting"/>
     </listeners>
-    <test name="BankingApp Test">
+    <test name="BankingApp_ff">
         <parameter name="browser" value="firefox"/>
         <classes>
              <class name="TC.TC_LoginTest_001"/>
@@ -13,7 +13,7 @@
             <class name="TC.TC_AddCustomerTest_003"/>
         </classes>
     </test>
-    <test name="BankingApp Test">
+    <test name="BankingApp_chr">
         <parameter name="browser" value="chrome"/>
         <classes>
              <class name="TC.TC_LoginTest_001"/>
