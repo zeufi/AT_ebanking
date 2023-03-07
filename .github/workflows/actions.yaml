@@ -18,7 +18,7 @@ jobs:
         browser: ['firefox', 'chrome'] # specify the values for the browser parameter
     env:
       RUNNER_OS: true
-      HEADLESS_CHROME: true
+#      HEADLESS_CHROME: true
       HEADLESS_FIREFOX: true
       BUILDEVENT_FILE: './buildevents.txt'
 
