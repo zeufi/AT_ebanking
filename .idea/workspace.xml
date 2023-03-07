@@ -4,92 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="modify script file">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Configuration/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Screenshots/loginTest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/chromedriver-linux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/geckodriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/geckodriver-linux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/puppy_and_kitten.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/tr_firefox_script.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/tr_script.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extent-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/application.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/testlog.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/testlog1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/chromedriver-linux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/geckodriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/geckodriver-linux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/puppy_and_kitten.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/tr_firefox_script.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/tr_script.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/POM/AddCustomerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/POM/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TC/BaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TC/TC_AddCustomerTest_003.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TC/TC_LoginDDT_002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TC/TC_LoginTest_001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestData/LoginData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Readconfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/Reporting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/XLUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/e-Banking_V1/BankingApp Test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/e-Banking_V1/BankingApp Test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/e-Banking_V1/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/failed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TC.TC_AddCustomerTest_003.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TC.TC_LoginDDT_002.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TC.TC_LoginTest_001.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/BankingApp Test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/e-Banking_V1/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/passed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/skipped.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/POM/AddCustomerPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/POM/LoginPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TC/BaseClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TC/TC_AddCustomerTest_003.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TC/TC_LoginDDT_002.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/TC/TC_LoginTest_001.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Utilities/Readconfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Utilities/Reporting.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Utilities/XLUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Test-Report-2023.03.07.12.19.40.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Test-Report-2023.03.07.12.24.31.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Test-Report-2023.03.07.12.24.59.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Test-Report-2023.03.07.12.44.31.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/actions.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/actions.yaml" afterDir="false" />
+    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="modify script files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/tr_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tr_script.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678191834233</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modify script files">
+      <created>1678192905863</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678192905863</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +145,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="modify script file" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify script file" />
+    <MESSAGE value="modify script files" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify script files" />
   </component>
 </project>
