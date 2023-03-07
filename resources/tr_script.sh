@@ -7,7 +7,7 @@
 #     <testng-results ignored="0" total="23" passed="22" failed="1" skipped="0">                  #
 ###################################################################################################
 
-TEST_RESULTS_LOCATION="${1:-/home/runner/work/e-BankingV1/e-BankingV1/target/surefire-reports}"
+TEST_RESULTS_LOCATION="${1:-/home/runner/work/target/surefire-reports}"
 # shellcheck disable=SC2002
 TEST_RESULTS_STRING=$(cat "${TEST_RESULTS_LOCATION}/testng-results.xml" | grep "<testng-results")
 
