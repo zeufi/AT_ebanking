@@ -1,14 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 20.942 sec <<< FAILURE! - in TestSuite
-addNewCustomer(TC.TC_AddCustomerTest_003)  Time elapsed: 3.125 sec  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: Element <a href="addcustomerpage.php"> is not clickable at point (120,393) because another element <div id="gdpr-consent-tool-wrapper"> obscures it
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 19.164 sec <<< FAILURE! - in TestSuite
+addNewCustomer(TC.TC_AddCustomerTest_003)  Time elapsed: 4.994 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="addcustomerpage.php">...</a> is not clickable at point (120, 398). Other element would receive the click: <div id="gdpr-consent-tool-wrapper" tabindex="-1" aria-hidden="true" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);">...</div>
+  (Session info: chrome=110.0.5481.177)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 30012, moz:profile: /var/folders/q8/qr6dk2915_d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dbe6cb00-1bb3-49fd-9a85-90d98824a762
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/q8/qr6dk2915_d...}, goog:chromeOptions: {debuggerAddress: localhost:58209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ebbb0a02def6cabb284b95b66074677
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)

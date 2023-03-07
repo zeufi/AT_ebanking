@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="3.237" tests="3" errors="0" skipped="1" failures="1">
+<testsuite name="TestSuite" time="5.943" tests="3" errors="0" skipped="1" failures="1">
   <properties>
     <property name="idea.version" value="2022.2.4"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -63,20 +63,15 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="loginTest" classname="TC.TC_LoginTest_001" time="0.112"/>
+  <testcase name="loginTest" classname="TC.TC_LoginTest_001" time="0.949"/>
   <testcase name="loginDDT" classname="TC.TC_LoginDDT_002" time="0">
     <skipped/>
-    <system-err><![CDATA[1678187514868	Marionette	INFO	Stopped listening on port 54681
-1678187515313	geckodriver	INFO	Listening on 127.0.0.1:7071
-1678187515323	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/qr6dk2915_d3szxdfnwhzrfc0000gn/T/rust_mozprofileQYfKkG"
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1678187515882	Marionette	INFO	Marionette enabled
-1678187515978	Marionette	INFO	Listening on port 54810
-Read port: 54810
-1678187516283	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/q8/qr6dk2915_d3szxdfnwhzrfc0000gn/T/rust_mozprofileQYfKkG/search.json.mozlz4", (void 0)))
-Mar 07, 2023 12:11:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 41202
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678204385.538][WARNING]: This version of ChromeDriver has not been tested with Chrome version 110.
+Mar 07, 2023 4:53:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Utils] [ERROR] [Error] java.io.FileNotFoundException: /Users/jojozeufack/Desktop/ebanking\src\test\java\TestData\LoginData.xlsx (No such file or directory)
 	at java.base/java.io.FileInputStream.open0(Native Method)
@@ -121,13 +116,14 @@ INFO: Detected dialect: W3C
 
 ]]></system-err>
   </testcase>
-  <testcase name="addNewCustomer" classname="TC.TC_AddCustomerTest_003" time="3.125">
-    <failure message="Element &lt;a href=&quot;addcustomerpage.php&quot;&gt; is not clickable at point (120,393) because another element &lt;div id=&quot;gdpr-consent-tool-wrapper&quot;&gt; obscures it&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;jojos-MBP.homenet.telecomitalia.it&apos;, ip: &apos;fe80:0:0:0:4bf:396e:8496:d2f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 30012, moz:profile: /var/folders/q8/qr6dk2915_d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: dbe6cb00-1bb3-49fd-9a85-90d98824a762" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a href="addcustomerpage.php"> is not clickable at point (120,393) because another element <div id="gdpr-consent-tool-wrapper"> obscures it
+  <testcase name="addNewCustomer" classname="TC.TC_AddCustomerTest_003" time="4.994">
+    <failure message="element click intercepted: Element &lt;a href=&quot;addcustomerpage.php&quot;&gt;...&lt;/a&gt; is not clickable at point (120, 398). Other element would receive the click: &lt;div id=&quot;gdpr-consent-tool-wrapper&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot; style=&quot;position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=110.0.5481.177)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;jojos-MBP.homenet.telecomitalia.it&apos;, ip: &apos;fe80:0:0:0:4bf:396e:8496:d2f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/q8/qr6dk2915_d...}, goog:chromeOptions: {debuggerAddress: localhost:58209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ebbb0a02def6cabb284b95b66074677" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="addcustomerpage.php">...</a> is not clickable at point (120, 398). Other element would receive the click: <div id="gdpr-consent-tool-wrapper" tabindex="-1" aria-hidden="true" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);">...</div>
+  (Session info: chrome=110.0.5481.177)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 30012, moz:profile: /var/folders/q8/qr6dk2915_d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: dbe6cb00-1bb3-49fd-9a85-90d98824a762
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/q8/qr6dk2915_d...}, goog:chromeOptions: {debuggerAddress: localhost:58209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ebbb0a02def6cabb284b95b66074677
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -149,21 +145,13 @@ Session ID: dbe6cb00-1bb3-49fd-9a85-90d98824a762
     <system-out><![CDATA[ INFO [main] (TC_AddCustomerTest_003.java:19)- user name provided
  INFO [main] (TC_AddCustomerTest_003.java:21)- password provided
 ]]></system-out>
-    <system-err><![CDATA[1678187520432	Marionette	INFO	Stopped listening on port 54810
-1678187520885	geckodriver	INFO	Listening on 127.0.0.1:27735
-1678187520894	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/qr6dk2915_d3szxdfnwhzrfc0000gn/T/rust_mozprofileWzRisG"
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1678187521447	Marionette	INFO	Marionette enabled
-1678187521539	Marionette	INFO	Listening on port 54946
-Read port: 54946
-1678187521856	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/q8/qr6dk2915_d3szxdfnwhzrfc0000gn/T/rust_mozprofileWzRisG/search.json.mozlz4", (void 0)))
-Mar 07, 2023 12:12:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 37127
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678204389.196][WARNING]: This version of ChromeDriver has not been tested with Chrome version 110.
+Mar 07, 2023 4:53:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
-1678187526167	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 ]]></system-err>
   </testcase>
 </testsuite>
