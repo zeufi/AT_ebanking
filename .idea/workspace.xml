@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Fix th TestNG.xml files">
+    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Fix1 th TestNG.xml files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/chromedriver-linux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/geckodriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/geckodriver-linux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/puppy_and_kitten.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/tr_firefox_script.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/tr_script.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678204625210</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fix1 th TestNG.xml files">
+      <created>1678205578310</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678205578310</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +207,7 @@
     <MESSAGE value="Updated3 script files" />
     <MESSAGE value="FIX THE TestNG.xml files" />
     <MESSAGE value="Fix th TestNG.xml files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix th TestNG.xml files" />
+    <MESSAGE value="Fix1 th TestNG.xml files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix1 th TestNG.xml files" />
   </component>
 </project>
