@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
-<suite name="e-Banking_V1">
-    <listeners>
-        <listener class-name="Utilities.Reporting"/>
-    </listeners>
     <test name="BankingApp_ff">
         <parameter name="browser" value="firefox"/>
         <classes>
@@ -21,4 +16,4 @@
             <class name="TC.TC_AddCustomerTest_003"/>
         </classes>
     </test>
-</suite>
+
