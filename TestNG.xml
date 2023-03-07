@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-    <test name="BankingApp_ff">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-             <class name="TC.TC_LoginTest_001"/>
-            <class name="TC.TC_LoginDDT_002"/>
-            <class name="TC.TC_AddCustomerTest_003"/>
-        </classes>
-    </test>
-    <test name="BankingApp_chr">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-             <class name="TC.TC_LoginTest_001"/>
-            <class name="TC.TC_LoginDDT_002"/>
-            <class name="TC.TC_AddCustomerTest_003"/>
-        </classes>
-    </test>
+    <suite name="eBanking-ff"> 
+     <listeners> 
+       <listener class-name="Utilities.Reporting"/> 
+     </listeners> 
+     <test verbose="2" name="BankingApp_ff"> 
+     <parameter name="browser" value="firefox"/> 
+       <classes> 
+        <class name="TC.TC_LoginTest_001"/>
+        <class name="TC.TC_LoginDDT_002"/> 
+        <class name="TC.TC_AddCustomerTest_003"/> 
+      </classes> 
+     </test> 
+   </suite>
+<suite name="eBanking-chr"> 
+     <listeners> 
+       <listener class-name="Utilities.Reporting"/> 
+     </listeners> 
+     <test verbose="2" name="BankingApp_chr"> 
+     <parameter name="browser" value="chrome"/> 
+       <classes> 
+        <class name="TC.TC_LoginTest_001"/>
+        <class name="TC.TC_LoginDDT_002"/> 
+        <class name="TC.TC_AddCustomerTest_003"/> 
+      </classes> 
+     </test> 
+   </suite>
 
