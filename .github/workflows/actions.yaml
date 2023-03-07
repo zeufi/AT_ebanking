@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: ['chrome', 'firefox'] # specify the values for the browser parameter
+        browser: ['firefox', 'chrome'] # specify the values for the browser parameter
     env:
       RUNNER_OS: true
       HEADLESS_CHROME: true
