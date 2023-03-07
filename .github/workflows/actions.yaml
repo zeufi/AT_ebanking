@@ -19,6 +19,7 @@ jobs:
     env:
       RUNNER_OS: true
       HEADLESS_CHROME: true
+      HEADLESS_FIREFOX: true
       BUILDEVENT_FILE: './buildevents.txt'
 
     steps:
