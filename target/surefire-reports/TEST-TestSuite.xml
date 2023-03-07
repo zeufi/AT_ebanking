@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="3.237" tests="3" errors="0" skipped="1" failures="1">
+  <properties>
+    <property name="idea.version" value="2022.2.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="19.0.1+10-21"/>
+    <property name="sun.boot.library.path" value="/Users/jojozeufack/Library/Java/JavaVirtualMachines/openjdk-19.0.1/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/jojozeufack/Desktop/ebanking"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/jojozeufack/Desktop/ebanking"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="19.0.1+10-21"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/q8/qr6dk2915_d3szxdfnwhzrfc0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/jojozeufack/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="63.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="13.2.1"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/jojozeufack"/>
+    <property name="user.timezone" value="Europe/Rome"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="19"/>
+    <property name="user.name" value="jojozeufack"/>
+    <property name="java.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2.4 test"/>
+    <property name="java.home" value="/Users/jojozeufack/Library/Java/JavaVirtualMachines/openjdk-19.0.1/Contents/Home"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="19.0.1"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="loginTest" classname="TC.TC_LoginTest_001" time="0.112"/>
+  <testcase name="loginDDT" classname="TC.TC_LoginDDT_002" time="0">
+    <skipped/>
+    <system-err><![CDATA[1678187514868	Marionette	INFO	Stopped listening on port 54681
+1678187515313	geckodriver	INFO	Listening on 127.0.0.1:7071
+1678187515323	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/qr6dk2915_d3szxdfnwhzrfc0000gn/T/rust_mozprofileQYfKkG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1678187515882	Marionette	INFO	Marionette enabled
+1678187515978	Marionette	INFO	Listening on port 54810
+Read port: 54810
+1678187516283	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/q8/qr6dk2915_d3szxdfnwhzrfc0000gn/T/rust_mozprofileQYfKkG/search.json.mozlz4", (void 0)))
+Mar 07, 2023 12:11:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Utils] [ERROR] [Error] java.io.FileNotFoundException: /Users/jojozeufack/Desktop/ebanking\src\test\java\TestData\LoginData.xlsx (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:158)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at Utilities.XLUtils.getRowCount(XLUtils.java:24)
+	at TC.TC_LoginDDT_002.getData(TC_LoginDDT_002.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:78)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:47)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:147)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:801)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+]]></system-err>
+  </testcase>
+  <testcase name="addNewCustomer" classname="TC.TC_AddCustomerTest_003" time="3.125">
+    <failure message="Element &lt;a href=&quot;addcustomerpage.php&quot;&gt; is not clickable at point (120,393) because another element &lt;div id=&quot;gdpr-consent-tool-wrapper&quot;&gt; obscures it&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;jojos-MBP.homenet.telecomitalia.it&apos;, ip: &apos;fe80:0:0:0:4bf:396e:8496:d2f4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;19.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 30012, moz:profile: /var/folders/q8/qr6dk2915_d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: dbe6cb00-1bb3-49fd-9a85-90d98824a762" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a href="addcustomerpage.php"> is not clickable at point (120,393) because another element <div id="gdpr-consent-tool-wrapper"> obscures it
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 30012, moz:profile: /var/folders/q8/qr6dk2915_d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dbe6cb00-1bb3-49fd-9a85-90d98824a762
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+	at POM.AddCustomerPage.clickAddNewCustomer(AddCustomerPage.java:68)
+	at TC.TC_AddCustomerTest_003.addNewCustomer(TC_AddCustomerTest_003.java:26)
+]]></failure>
+    <system-out><![CDATA[ INFO [main] (TC_AddCustomerTest_003.java:19)- user name provided
+ INFO [main] (TC_AddCustomerTest_003.java:21)- password provided
+]]></system-out>
+    <system-err><![CDATA[1678187520432	Marionette	INFO	Stopped listening on port 54810
+1678187520885	geckodriver	INFO	Listening on 127.0.0.1:27735
+1678187520894	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/qr6dk2915_d3szxdfnwhzrfc0000gn/T/rust_mozprofileWzRisG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1678187521447	Marionette	INFO	Marionette enabled
+1678187521539	Marionette	INFO	Listening on port 54946
+Read port: 54946
+1678187521856	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/q8/qr6dk2915_d3szxdfnwhzrfc0000gn/T/rust_mozprofileWzRisG/search.json.mozlz4", (void 0)))
+Mar 07, 2023 12:12:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.guru99.com."
+1678187526167	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+]]></system-err>
+  </testcase>
+</testsuite>

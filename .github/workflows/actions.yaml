@@ -40,10 +40,10 @@ jobs:
           echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
           echo "STEP_ID=run-maven-tests-$browser" >> $GITHUB_ENV
       - name: Run tests with maven on $browser
-        working-directory: webdriver_java
+        working-directory: e-BankingV1
         run: mvn test -Dbrowser=$browser # pass the browser parameter to the Maven command
       - name: Telemetry - Collect build data
-        working-directory: webdriver_java
+        working-directory: e-BankingV1
         env:
           PUSHGATEWAY_URL: ${{ secrets.PUSHGATEWAY_URL }}
           BUILDEVENT_FILE: ../${{ env.BUILDEVENT_FILE }}
