@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="e-Banking_V1">
+<suite name="MyTestSuite" parallel="tests" thread-count="2">
     <listeners>
         <listener class-name="Utilities.Reporting"/>
     </listeners>
-    <test verbose="2" name="BankingApp Test">
+    <test verbose="2" name="BankingApp Test1">
         <parameter name="browser" value="firefox"/>
         <classes>
              <class name="TC.TC_LoginTest_001"/>
+            <class name="TC.TC_LoginDDT_002"/>
+            <class name="TC.TC_AddCustomerTest_003"/>
+        </classes>
+    </test>
+    <test verbose="2" name="BankingApp Test2">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TC.TC_LoginTest_001"/>
             <class name="TC.TC_LoginDDT_002"/>
             <class name="TC.TC_AddCustomerTest_003"/>
         </classes>
