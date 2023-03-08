@@ -33,7 +33,8 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>TestNG.xml</suiteXmlFile>
+						<suiteXmlFile>TestNG-chrome.xml</suiteXmlFile>
+                        <suiteXmlFile>TestNG-firefox.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
