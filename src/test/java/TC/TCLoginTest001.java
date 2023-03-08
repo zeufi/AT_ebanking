@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.LinkedList;
 
-public class TC_LoginTest_001 extends BaseClass{
-    public TC_LoginTest_001() throws IOException {
+public class TCLoginTest001 extends BaseClass{
+    public TCLoginTest001() throws IOException {
     }
 
     @Test
