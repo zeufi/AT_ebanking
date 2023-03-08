@@ -11,14 +11,52 @@ on:
 
 # What jobs to execute
 jobs:
-  build_and_test:
+  build_and_test_chrome:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        browser: ['firefox', 'chrome'] # specify the values for the browser parameter
+#    strategy:
+#      matrix:
+#        browser: ['firefox', 'chrome'] # specify the values for the browser parameter
     env:
       RUNNER_OS: true
       HEADLESS_CHROME: true
+      BUILDEVENT_FILE: './buildevents.txt'
+
+    steps:
+      - name: Set start time
+        run: echo "START_TIME=$(date +%s)" >> $GITHUB_ENV
+      - uses: kvrhdn/gha-buildevents@v1
+        with:
+          apikey: ${{ secrets.BUILDEVENTS_APIKEY }}
+          dataset: tau-build-pipeline
+          job-status: ${{ job.status }}
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: 11
+      - name: Telemetry start - Maven tests
+        if: always()
+        run: |
+          echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
+          echo "STEP_ID=run-maven-tests-$browser" >> $GITHUB_ENV
+      - name: Run tests with maven on chrome
+        working-directory: .
+        run: mvn test -Dbrowser=chrome # pass the browser parameter to the Maven command
+      - name: Telemetry - Collect build data
+        working-directory: .
+        env:
+          PUSHGATEWAY_URL: ${{ secrets.PUSHGATEWAY_URL }}
+          BUILDEVENT_FILE: ../${{ env.BUILDEVENT_FILE }}
+        if: always()
+        run: |
+          echo "github_actions_total_duration $(expr $(date +%s) - ${START_TIME})" | curl --data-binary @- ${PUSHGATEWAY_URL}/metrics/job/github_actions
+          ./resources/tr_script.sh # run the script based on the browser parameter
+          buildevents step $TRACE_ID $STEP_ID $STEP_START $STEP_ID
+
+  build_and_test_firefox:
+    runs-on: ubuntu-latest
+    env:
+      RUNNER_OS: true
       HEADLESS_FIREFOX: true
       BUILDEVENT_FILE: './buildevents.txt'
 
@@ -40,9 +78,9 @@ jobs:
         run: |
           echo "STEP_START=$(date +%s)" >> $GITHUB_ENV
           echo "STEP_ID=run-maven-tests-$browser" >> $GITHUB_ENV
-      - name: Run tests with maven on $browser
+      - name: Run tests with maven on firefox
         working-directory: .
-        run: mvn test -Dbrowser=$browser # pass the browser parameter to the Maven command
+        run: mvn test -Dbrowser=firefox # pass the browser parameter to the Maven command
       - name: Telemetry - Collect build data
         working-directory: .
         env:
@@ -53,7 +91,6 @@ jobs:
           echo "github_actions_total_duration $(expr $(date +%s) - ${START_TIME})" | curl --data-binary @- ${PUSHGATEWAY_URL}/metrics/job/github_actions
           ./resources/tr_script.sh # run the script based on the browser parameter
           buildevents step $TRACE_ID $STEP_ID $STEP_START $STEP_ID
-
 
 #  build_and_test_firefox:
 #    runs-on: ubuntu-latest
