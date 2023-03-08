@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Adding different testng files to avoid running in the other browser.">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/actions.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/actions.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Adding2 different testng files to avoid running in the other browser." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -275,7 +272,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678274161834</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Adding1 different testng files to avoid running in the other browser.">
+      <created>1678274296391</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1678274296391</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Adding2 different testng files to avoid running in the other browser.">
+      <created>1678274710300</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1678274710300</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,6 +324,8 @@
     <MESSAGE value="Updated the cron jobs" />
     <MESSAGE value="Adding groups to avoid running in the other browser." />
     <MESSAGE value="Adding different testng files to avoid running in the other browser." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding different testng files to avoid running in the other browser." />
+    <MESSAGE value="Adding1 different testng files to avoid running in the other browser." />
+    <MESSAGE value="Adding2 different testng files to avoid running in the other browser." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding2 different testng files to avoid running in the other browser." />
   </component>
 </project>
