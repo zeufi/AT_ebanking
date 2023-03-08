@@ -50,7 +50,7 @@ jobs:
         if: always()
         run: |
           echo "github_actions_total_duration $(expr $(date +%s) - ${START_TIME})" | curl --data-binary @- ${PUSHGATEWAY_URL}/metrics/job/github_actions
-          ./resources/tr_script.sh # run the script based on the browser parameter
+          ./resources/tr_script.sh
           buildevents step $TRACE_ID $STEP_ID $STEP_START $STEP_ID
 
   build_and_test_firefox:
@@ -89,7 +89,7 @@ jobs:
         if: always()
         run: |
           echo "github_actions_total_duration $(expr $(date +%s) - ${START_TIME})" | curl --data-binary @- ${PUSHGATEWAY_URL}/metrics/job/github_actions
-          ./resources/tr_script.sh # run the script based on the browser parameter
+          ./resources/tr_script.sh
           buildevents step $TRACE_ID $STEP_ID $STEP_START $STEP_ID
 
 #  build_and_test_firefox:

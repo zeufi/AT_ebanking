@@ -174,3 +174,17 @@
 2023-03-07 17:57:27,064 - eBanking -INFO - *************** Start validation ********************
 2023-03-07 17:57:34,679 - eBanking -INFO - user name provided
 2023-03-07 17:57:34,732 - eBanking -INFO - password provided
+2023-03-08 12:53:05,334 - eBanking -INFO - ============== TC_LoginTest_001 Started ================
+2023-03-08 12:53:05,339 - eBanking -INFO - *************** URL is Open ********************
+2023-03-08 12:53:05,374 - eBanking -INFO - *************** Enter credentials ********************
+2023-03-08 12:53:05,444 - eBanking -INFO - *************** Start validation ********************
+2023-03-08 12:53:05,449 - eBanking -INFO - *************** LoginTest Passed ********************
+2023-03-08 12:53:16,550 - eBanking -INFO - user name provided
+2023-03-08 12:53:16,566 - eBanking -INFO - password provided
+2023-03-08 12:54:45,767 - eBanking -INFO - ============== TC_LoginTest_001 Started ================
+2023-03-08 12:54:45,771 - eBanking -INFO - *************** URL is Open ********************
+2023-03-08 12:54:45,802 - eBanking -INFO - *************** Enter credentials ********************
+2023-03-08 12:54:45,872 - eBanking -INFO - *************** Start validation ********************
+2023-03-08 12:54:45,880 - eBanking -INFO - *************** LoginTest Passed ********************
+2023-03-08 12:54:56,648 - eBanking -INFO - user name provided
+2023-03-08 12:54:56,665 - eBanking -INFO - password provided

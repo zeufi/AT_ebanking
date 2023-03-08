@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="6" passed="1" failed="1" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-07T16:52:57 CET" name="e-Banking_V1" finished-at="2023-03-07T16:53:16 CET" duration-ms="18570">
+  <suite started-at="2023-03-08T12:54:29 CET" name="MyTestSuite" finished-at="2023-03-08T12:54:40 CET" duration-ms="11549">
     <groups>
     </groups>
-    <test started-at="2023-03-07T16:52:57 CET" name="BankingApp Test" finished-at="2023-03-07T16:53:16 CET" duration-ms="18570">
-      <class name="TC.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TC.TC_LoginTest_001@60611244]" started-at="2023-03-07T16:52:57 CET" name="setup" finished-at="2023-03-07T16:53:02 CET" duration-ms="4919" status="PASS">
+    <test started-at="2023-03-08T12:54:29 CET" name="BankingApp" finished-at="2023-03-08T12:54:40 CET" duration-ms="11549">
+      <class name="TC.TC_AddCustomerTest_003">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TC.TC_AddCustomerTest_003@78e117e3]" started-at="2023-03-08T12:54:38 CET" name="setup" finished-at="2023-03-08T12:54:40 CET" duration-ms="1822" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -15,27 +15,246 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010b559fa8 chromedriver + 4886440
+1   chromedriver                        0x000000010b4d7643 chromedriver + 4351555
+2   chromedriver                        0x000000010b125b27 chromedriver + 477991
+3   chromedriver                        0x000000010b157659 chromedriver + 681561
+4   chromedriver                        0x000000010b1523bb chromedriver + 660411
+5   chromedriver                        0x000000010b14e712 chromedriver + 644882
+6   chromedriver                        0x000000010b199bd7 chromedriver + 953303
+7   chromedriver                        0x000000010b1903a3 chromedriver + 914339
+8   chromedriver                        0x000000010b15a57f chromedriver + 693631
+9   chromedriver                        0x000000010b15bb1e chromedriver + 699166
+10  chromedriver                        0x000000010b526b9e chromedriver + 4676510
+11  chromedriver                        0x000000010b52b91e chromedriver + 4696350
+12  chromedriver                        0x000000010b53319f chromedriver + 4727199
+13  chromedriver                        0x000000010b52c81a chromedriver + 4700186
+14  chromedriver                        0x000000010b4ffa62 chromedriver + 4516450
+15  chromedriver                        0x000000010b54b8c8 chromedriver + 4827336
+16  chromedriver                        0x000000010b54ba45 chromedriver + 4827717
+17  chromedriver                        0x000000010b5617ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010b559fa8 chromedriver + 4886440
+1   chromedriver                        0x000000010b4d7643 chromedriver + 4351555
+2   chromedriver                        0x000000010b125b27 chromedriver + 477991
+3   chromedriver                        0x000000010b157659 chromedriver + 681561
+4   chromedriver                        0x000000010b1523bb chromedriver + 660411
+5   chromedriver                        0x000000010b14e712 chromedriver + 644882
+6   chromedriver                        0x000000010b199bd7 chromedriver + 953303
+7   chromedriver                        0x000000010b1903a3 chromedriver + 914339
+8   chromedriver                        0x000000010b15a57f chromedriver + 693631
+9   chromedriver                        0x000000010b15bb1e chromedriver + 699166
+10  chromedriver                        0x000000010b526b9e chromedriver + 4676510
+11  chromedriver                        0x000000010b52b91e chromedriver + 4696350
+12  chromedriver                        0x000000010b53319f chromedriver + 4727199
+13  chromedriver                        0x000000010b52c81a chromedriver + 4700186
+14  chromedriver                        0x000000010b4ffa62 chromedriver + 4516450
+15  chromedriver                        0x000000010b54b8c8 chromedriver + 4827336
+16  chromedriver                        0x000000010b54ba45 chromedriver + 4827717
+17  chromedriver                        0x000000010b5617ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at TC.BaseClass.setup(BaseClass.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String)[pri:0, instance:TC.TC_LoginTest_001@60611244]" started-at="2023-03-07T16:53:02 CET" name="loginTest" finished-at="2023-03-07T16:53:03 CET" duration-ms="948" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="addNewCustomer()[pri:0, instance:TC.TC_AddCustomerTest_003@78e117e3]" started-at="2023-03-08T12:54:40 CET" name="addNewCustomer" finished-at="2023-03-08T12:54:40 CET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010b559fa8 chromedriver + 4886440
+1   chromedriver                        0x000000010b4d7643 chromedriver + 4351555
+2   chromedriver                        0x000000010b125b27 chromedriver + 477991
+3   chromedriver                        0x000000010b157659 chromedriver + 681561
+4   chromedriver                        0x000000010b1523bb chromedriver + 660411
+5   chromedriver                        0x000000010b14e712 chromedriver + 644882
+6   chromedriver                        0x000000010b199bd7 chromedriver + 953303
+7   chromedriver                        0x000000010b1903a3 chromedriver + 914339
+8   chromedriver                        0x000000010b15a57f chromedriver + 693631
+9   chromedriver                        0x000000010b15bb1e chromedriver + 699166
+10  chromedriver                        0x000000010b526b9e chromedriver + 4676510
+11  chromedriver                        0x000000010b52b91e chromedriver + 4696350
+12  chromedriver                        0x000000010b53319f chromedriver + 4727199
+13  chromedriver                        0x000000010b52c81a chromedriver + 4700186
+14  chromedriver                        0x000000010b4ffa62 chromedriver + 4516450
+15  chromedriver                        0x000000010b54b8c8 chromedriver + 4827336
+16  chromedriver                        0x000000010b54ba45 chromedriver + 4827717
+17  chromedriver                        0x000000010b5617ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010b559fa8 chromedriver + 4886440
+1   chromedriver                        0x000000010b4d7643 chromedriver + 4351555
+2   chromedriver                        0x000000010b125b27 chromedriver + 477991
+3   chromedriver                        0x000000010b157659 chromedriver + 681561
+4   chromedriver                        0x000000010b1523bb chromedriver + 660411
+5   chromedriver                        0x000000010b14e712 chromedriver + 644882
+6   chromedriver                        0x000000010b199bd7 chromedriver + 953303
+7   chromedriver                        0x000000010b1903a3 chromedriver + 914339
+8   chromedriver                        0x000000010b15a57f chromedriver + 693631
+9   chromedriver                        0x000000010b15bb1e chromedriver + 699166
+10  chromedriver                        0x000000010b526b9e chromedriver + 4676510
+11  chromedriver                        0x000000010b52b91e chromedriver + 4696350
+12  chromedriver                        0x000000010b53319f chromedriver + 4727199
+13  chromedriver                        0x000000010b52c81a chromedriver + 4700186
+14  chromedriver                        0x000000010b4ffa62 chromedriver + 4516450
+15  chromedriver                        0x000000010b54b8c8 chromedriver + 4827336
+16  chromedriver                        0x000000010b54ba45 chromedriver + 4827717
+17  chromedriver                        0x000000010b5617ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at TC.BaseClass.setup(BaseClass.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC.TC_LoginTest_001@60611244]" started-at="2023-03-07T16:53:03 CET" name="tearDown" finished-at="2023-03-07T16:53:04 CET" duration-ms="225" status="PASS">
+        </test-method> <!-- addNewCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC.TC_AddCustomerTest_003@78e117e3]" started-at="2023-03-08T12:54:40 CET" name="tearDown" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1678276480773" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TC.TC_LoginTest_001 -->
-      <class name="TC.TC_AddCustomerTest_003">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TC.TC_AddCustomerTest_003@5e4c8041]" started-at="2023-03-07T16:53:07 CET" name="setup" finished-at="2023-03-07T16:53:11 CET" duration-ms="3438" status="PASS">
+      </class> <!-- TC.TC_AddCustomerTest_003 -->
+      <class name="TC.TCLoginTest001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TC.TCLoginTest001@4ddced80]" started-at="2023-03-08T12:54:29 CET" name="setup" finished-at="2023-03-08T12:54:37 CET" duration-ms="7717" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -43,28 +262,465 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000102f13fa8 chromedriver + 4886440
+1   chromedriver                        0x0000000102e91643 chromedriver + 4351555
+2   chromedriver                        0x0000000102adfb27 chromedriver + 477991
+3   chromedriver                        0x0000000102b11659 chromedriver + 681561
+4   chromedriver                        0x0000000102b0c3bb chromedriver + 660411
+5   chromedriver                        0x0000000102b08712 chromedriver + 644882
+6   chromedriver                        0x0000000102b53bd7 chromedriver + 953303
+7   chromedriver                        0x0000000102b4a3a3 chromedriver + 914339
+8   chromedriver                        0x0000000102b1457f chromedriver + 693631
+9   chromedriver                        0x0000000102b15b1e chromedriver + 699166
+10  chromedriver                        0x0000000102ee0b9e chromedriver + 4676510
+11  chromedriver                        0x0000000102ee591e chromedriver + 4696350
+12  chromedriver                        0x0000000102eed19f chromedriver + 4727199
+13  chromedriver                        0x0000000102ee681a chromedriver + 4700186
+14  chromedriver                        0x0000000102eb9a62 chromedriver + 4516450
+15  chromedriver                        0x0000000102f058c8 chromedriver + 4827336
+16  chromedriver                        0x0000000102f05a45 chromedriver + 4827717
+17  chromedriver                        0x0000000102f1b7ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000102f13fa8 chromedriver + 4886440
+1   chromedriver                        0x0000000102e91643 chromedriver + 4351555
+2   chromedriver                        0x0000000102adfb27 chromedriver + 477991
+3   chromedriver                        0x0000000102b11659 chromedriver + 681561
+4   chromedriver                        0x0000000102b0c3bb chromedriver + 660411
+5   chromedriver                        0x0000000102b08712 chromedriver + 644882
+6   chromedriver                        0x0000000102b53bd7 chromedriver + 953303
+7   chromedriver                        0x0000000102b4a3a3 chromedriver + 914339
+8   chromedriver                        0x0000000102b1457f chromedriver + 693631
+9   chromedriver                        0x0000000102b15b1e chromedriver + 699166
+10  chromedriver                        0x0000000102ee0b9e chromedriver + 4676510
+11  chromedriver                        0x0000000102ee591e chromedriver + 4696350
+12  chromedriver                        0x0000000102eed19f chromedriver + 4727199
+13  chromedriver                        0x0000000102ee681a chromedriver + 4700186
+14  chromedriver                        0x0000000102eb9a62 chromedriver + 4516450
+15  chromedriver                        0x0000000102f058c8 chromedriver + 4827336
+16  chromedriver                        0x0000000102f05a45 chromedriver + 4827717
+17  chromedriver                        0x0000000102f1b7ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at TC.BaseClass.setup(BaseClass.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addNewCustomer()[pri:0, instance:TC.TC_AddCustomerTest_003@5e4c8041]" started-at="2023-03-07T16:53:11 CET" name="addNewCustomer" finished-at="2023-03-07T16:53:16 CET" duration-ms="4986" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="loginTest(java.lang.String)[pri:0, instance:TC.TCLoginTest001@4ddced80]" started-at="2023-03-08T12:54:37 CET" name="loginTest" finished-at="2023-03-08T12:54:37 CET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[element click intercepted: Element <a href="addcustomerpage.php">...</a> is not clickable at point (120, 398). Other element would receive the click: <div id="gdpr-consent-tool-wrapper" tabindex="-1" aria-hidden="true" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);">...</div>
-  (Session info: chrome=110.0.5481.177)
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/q8/qr6dk2915_d...}, goog:chromeOptions: {debuggerAddress: localhost:58209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ebbb0a02def6cabb284b95b66074677]]>
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000102f13fa8 chromedriver + 4886440
+1   chromedriver                        0x0000000102e91643 chromedriver + 4351555
+2   chromedriver                        0x0000000102adfb27 chromedriver + 477991
+3   chromedriver                        0x0000000102b11659 chromedriver + 681561
+4   chromedriver                        0x0000000102b0c3bb chromedriver + 660411
+5   chromedriver                        0x0000000102b08712 chromedriver + 644882
+6   chromedriver                        0x0000000102b53bd7 chromedriver + 953303
+7   chromedriver                        0x0000000102b4a3a3 chromedriver + 914339
+8   chromedriver                        0x0000000102b1457f chromedriver + 693631
+9   chromedriver                        0x0000000102b15b1e chromedriver + 699166
+10  chromedriver                        0x0000000102ee0b9e chromedriver + 4676510
+11  chromedriver                        0x0000000102ee591e chromedriver + 4696350
+12  chromedriver                        0x0000000102eed19f chromedriver + 4727199
+13  chromedriver                        0x0000000102ee681a chromedriver + 4700186
+14  chromedriver                        0x0000000102eb9a62 chromedriver + 4516450
+15  chromedriver                        0x0000000102f058c8 chromedriver + 4827336
+16  chromedriver                        0x0000000102f05a45 chromedriver + 4827717
+17  chromedriver                        0x0000000102f1b7ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="addcustomerpage.php">...</a> is not clickable at point (120, 398). Other element would receive the click: <div id="gdpr-consent-tool-wrapper" tabindex="-1" aria-hidden="true" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);">...</div>
-  (Session info: chrome=110.0.5481.177)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/q8/qr6dk2915_d...}, goog:chromeOptions: {debuggerAddress: localhost:58209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ebbb0a02def6cabb284b95b66074677
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x0000000102f13fa8 chromedriver + 4886440
+1   chromedriver                        0x0000000102e91643 chromedriver + 4351555
+2   chromedriver                        0x0000000102adfb27 chromedriver + 477991
+3   chromedriver                        0x0000000102b11659 chromedriver + 681561
+4   chromedriver                        0x0000000102b0c3bb chromedriver + 660411
+5   chromedriver                        0x0000000102b08712 chromedriver + 644882
+6   chromedriver                        0x0000000102b53bd7 chromedriver + 953303
+7   chromedriver                        0x0000000102b4a3a3 chromedriver + 914339
+8   chromedriver                        0x0000000102b1457f chromedriver + 693631
+9   chromedriver                        0x0000000102b15b1e chromedriver + 699166
+10  chromedriver                        0x0000000102ee0b9e chromedriver + 4676510
+11  chromedriver                        0x0000000102ee591e chromedriver + 4696350
+12  chromedriver                        0x0000000102eed19f chromedriver + 4727199
+13  chromedriver                        0x0000000102ee681a chromedriver + 4700186
+14  chromedriver                        0x0000000102eb9a62 chromedriver + 4516450
+15  chromedriver                        0x0000000102f058c8 chromedriver + 4827336
+16  chromedriver                        0x0000000102f05a45 chromedriver + 4827717
+17  chromedriver                        0x0000000102f1b7ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at TC.BaseClass.setup(BaseClass.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC.TCLoginTest001@4ddced80]" started-at="2023-03-08T12:54:37 CET" name="tearDown" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1678276477105" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TC.TCLoginTest001 -->
+      <class name="TC.TC_LoginDDT_002">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TC.TC_LoginDDT_002@1534f01b]" started-at="2023-03-08T12:54:37 CET" name="setup" finished-at="2023-03-08T12:54:38 CET" duration-ms="1838" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010e7a3fa8 chromedriver + 4886440
+1   chromedriver                        0x000000010e721643 chromedriver + 4351555
+2   chromedriver                        0x000000010e36fb27 chromedriver + 477991
+3   chromedriver                        0x000000010e3a1659 chromedriver + 681561
+4   chromedriver                        0x000000010e39c3bb chromedriver + 660411
+5   chromedriver                        0x000000010e398712 chromedriver + 644882
+6   chromedriver                        0x000000010e3e3bd7 chromedriver + 953303
+7   chromedriver                        0x000000010e3da3a3 chromedriver + 914339
+8   chromedriver                        0x000000010e3a457f chromedriver + 693631
+9   chromedriver                        0x000000010e3a5b1e chromedriver + 699166
+10  chromedriver                        0x000000010e770b9e chromedriver + 4676510
+11  chromedriver                        0x000000010e77591e chromedriver + 4696350
+12  chromedriver                        0x000000010e77d19f chromedriver + 4727199
+13  chromedriver                        0x000000010e77681a chromedriver + 4700186
+14  chromedriver                        0x000000010e749a62 chromedriver + 4516450
+15  chromedriver                        0x000000010e7958c8 chromedriver + 4827336
+16  chromedriver                        0x000000010e795a45 chromedriver + 4827717
+17  chromedriver                        0x000000010e7ab7ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 109
+Current browser version is 111.0.5563.64 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010e7a3fa8 chromedriver + 4886440
+1   chromedriver                        0x000000010e721643 chromedriver + 4351555
+2   chromedriver                        0x000000010e36fb27 chromedriver + 477991
+3   chromedriver                        0x000000010e3a1659 chromedriver + 681561
+4   chromedriver                        0x000000010e39c3bb chromedriver + 660411
+5   chromedriver                        0x000000010e398712 chromedriver + 644882
+6   chromedriver                        0x000000010e3e3bd7 chromedriver + 953303
+7   chromedriver                        0x000000010e3da3a3 chromedriver + 914339
+8   chromedriver                        0x000000010e3a457f chromedriver + 693631
+9   chromedriver                        0x000000010e3a5b1e chromedriver + 699166
+10  chromedriver                        0x000000010e770b9e chromedriver + 4676510
+11  chromedriver                        0x000000010e77591e chromedriver + 4696350
+12  chromedriver                        0x000000010e77d19f chromedriver + 4727199
+13  chromedriver                        0x000000010e77681a chromedriver + 4700186
+14  chromedriver                        0x000000010e749a62 chromedriver + 4516450
+15  chromedriver                        0x000000010e7958c8 chromedriver + 4827336
+16  chromedriver                        0x000000010e795a45 chromedriver + 4827717
+17  chromedriver                        0x000000010e7ab7ef chromedriver + 4917231
+18  libsystem_pthread.dylib             0x00007ff80592c259 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff805927c7b thread_start + 15
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at TC.BaseClass.setup(BaseClass.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:TC.TC_LoginDDT_002@1534f01b]" started-at="2023-03-08T12:54:38 CET" name="loginDDT" data-provider="LoginData" finished-at="2023-03-08T12:54:38 CET" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: /Users/jojozeufack/Desktop/ebanking\src\test\java\TestData\LoginData.xlsx (No such file or directory)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: /Users/jojozeufack/Desktop/ebanking\src\test\java\TestData\LoginData.xlsx (No such file or directory)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:51)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:147)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:801)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.io.FileNotFoundException: /Users/jojozeufack/Desktop/ebanking\src\test\java\TestData\LoginData.xlsx (No such file or directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at Utilities.XLUtils.getRowCount(XLUtils.java:24)
+at TC.TC_LoginDDT_002.getData(TC_LoginDDT_002.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:78)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:47)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC.TC_LoginDDT_002@1534f01b]" started-at="2023-03-08T12:54:38 CET" name="tearDown" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1678276478948" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TC.TC_LoginDDT_002 -->
+    </test> <!-- BankingApp -->
+  </suite> <!-- MyTestSuite -->
+  <suite started-at="2023-03-08T12:54:40 CET" name="MyTestSuite (0)" finished-at="2023-03-08T12:55:00 CET" duration-ms="19204">
+    <groups>
+    </groups>
+    <test started-at="2023-03-08T12:54:40 CET" name="BankingApp" finished-at="2023-03-08T12:55:00 CET" duration-ms="19204">
+      <class name="TC.TC_AddCustomerTest_003">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TC.TC_AddCustomerTest_003@3c419631]" started-at="2023-03-08T12:54:51 CET" name="setup" finished-at="2023-03-08T12:54:56 CET" duration-ms="4717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addNewCustomer()[pri:0, instance:TC.TC_AddCustomerTest_003@3c419631]" started-at="2023-03-08T12:54:56 CET" name="addNewCustomer" finished-at="2023-03-08T12:54:59 CET" duration-ms="3093" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a href="addcustomerpage.php"> is not clickable at point (120,393) because another element <div id="gdpr-consent-tool-wrapper"> obscures it
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 66541, moz:profile: /var/folders/q8/qr6dk2915_d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6caf6321-1a38-40aa-9a38-33672d9f4862]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a href="addcustomerpage.php"> is not clickable at point (120,393) because another element <div id="gdpr-consent-tool-wrapper"> obscures it
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'jojos-MBP.homenet.telecomitalia.it', ip: 'fe80:0:0:0:4bf:396e:8496:d2f4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230227191043, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 22.3.0, moz:processID: 66541, moz:profile: /var/folders/q8/qr6dk2915_d..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6caf6321-1a38-40aa-9a38-33672d9f4862
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -105,36 +761,65 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
 at org.testng.TestNG.runSuites(TestNG.java:1039)
 at org.testng.TestNG.run(TestNG.java:1007)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC.TC_AddCustomerTest_003@5e4c8041]" started-at="2023-03-07T16:53:16 CET" name="tearDown" finished-at="2023-03-07T16:53:16 CET" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC.TC_AddCustomerTest_003@3c419631]" started-at="2023-03-08T12:54:59 CET" name="tearDown" finished-at="2023-03-08T12:55:00 CET" duration-ms="487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TC.TC_AddCustomerTest_003 -->
-      <class name="TC.TC_LoginDDT_002">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TC.TC_LoginDDT_002@3745e5c6]" started-at="2023-03-07T16:53:04 CET" name="setup" finished-at="2023-03-07T16:53:07 CET" duration-ms="3577" status="PASS">
+      <class name="TC.TCLoginTest001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TC.TCLoginTest001@4b5d6a01]" started-at="2023-03-08T12:54:40 CET" name="setup" finished-at="2023-03-08T12:54:45 CET" duration-ms="4774" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:TC.TC_LoginDDT_002@3745e5c6]" started-at="2023-03-07T16:53:07 CET" name="loginDDT" data-provider="LoginData" finished-at="2023-03-07T16:53:07 CET" duration-ms="0" status="SKIP">
+        <test-method signature="loginTest(java.lang.String)[pri:0, instance:TC.TCLoginTest001@4b5d6a01]" started-at="2023-03-08T12:54:45 CET" name="loginTest" finished-at="2023-03-08T12:54:45 CET" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC.TCLoginTest001@4b5d6a01]" started-at="2023-03-08T12:54:45 CET" name="tearDown" finished-at="2023-03-08T12:54:46 CET" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TC.TCLoginTest001 -->
+      <class name="TC.TC_LoginDDT_002">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TC.TC_LoginDDT_002@4a22f9e2]" started-at="2023-03-08T12:54:46 CET" name="setup" finished-at="2023-03-08T12:54:51 CET" duration-ms="4953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginDDT(java.lang.String, java.lang.String)[pri:0, instance:TC.TC_LoginDDT_002@4a22f9e2]" started-at="2023-03-08T12:54:51 CET" name="loginDDT" data-provider="LoginData" finished-at="2023-03-08T12:54:51 CET" duration-ms="0" status="SKIP">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.io.FileNotFoundException: /Users/jojozeufack/Desktop/ebanking\src\test\java\TestData\LoginData.xlsx (No such file or directory)]]>
@@ -164,36 +849,37 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
 at org.testng.TestNG.runSuites(TestNG.java:1039)
 at org.testng.TestNG.run(TestNG.java:1007)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 Caused by: java.io.FileNotFoundException: /Users/jojozeufack/Desktop/ebanking\src\test\java\TestData\LoginData.xlsx (No such file or directory)
 at java.base/java.io.FileInputStream.open0(Native Method)
 at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
 at Utilities.XLUtils.getRowCount(XLUtils.java:24)
-at TC.TC_LoginDDT_002.getData(TC_LoginDDT_002.java:55)
+at TC.TC_LoginDDT_002.getData(TC_LoginDDT_002.java:53)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:78)
 at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:47)
-... 28 more
+... 29 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC.TC_LoginDDT_002@3745e5c6]" started-at="2023-03-07T16:53:07 CET" name="tearDown" finished-at="2023-03-07T16:53:07 CET" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC.TC_LoginDDT_002@4a22f9e2]" started-at="2023-03-08T12:54:51 CET" name="tearDown" finished-at="2023-03-08T12:54:51 CET" duration-ms="512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TC.TC_LoginDDT_002 -->
-    </test> <!-- BankingApp Test -->
-  </suite> <!-- e-Banking_V1 -->
+    </test> <!-- BankingApp -->
+  </suite> <!-- MyTestSuite (0) -->
 </testng-results>
