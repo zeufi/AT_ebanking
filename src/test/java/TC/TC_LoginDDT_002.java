@@ -2,7 +2,6 @@ package TC;
 
 import POM.LoginPage;
 import Utilities.XLUtils;
-import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -12,8 +11,7 @@ import java.io.IOException;
 public class TC_LoginDDT_002 extends BaseClass{
     public TC_LoginDDT_002() throws IOException {
     }
-
-    @Test(dataProvider="LoginData")
+	@Test(groups = {"Chrome", "Firefox"}, dataProvider="LoginData")
 	public void loginDDT(String username, String password) throws InterruptedException
 	{
 		LoginPage lp=new LoginPage(driver);

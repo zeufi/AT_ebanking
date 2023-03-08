@@ -12,7 +12,7 @@ public class TC_LoginTest_001 extends BaseClass{
     public TC_LoginTest_001() throws IOException {
     }
 
-    @Test
+    @Test(groups = {"Chrome", "Firefox"})
     @Parameters("browser")
     public void loginTest(String br) throws IOException {
         logger.info("============== TC_LoginTest_001 Started ================");
@@ -28,7 +28,7 @@ public class TC_LoginTest_001 extends BaseClass{
             lp.setTxtPassword(password);
             lp.setBtnLogin();
             logger.info("*************** Start validation ********************");
-            LinkedList<String> currentTitle = new LinkedList<String>();
+            LinkedList<String> currentTitle = new LinkedList<>();
             if("firefox".equals(br)){
                 currentTitle.add("Guru99 Bank Home Page");
             }else if("chrome".equals(br)){
