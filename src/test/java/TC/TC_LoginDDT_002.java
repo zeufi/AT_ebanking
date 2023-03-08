@@ -11,7 +11,7 @@ import java.io.IOException;
 public class TC_LoginDDT_002 extends BaseClass{
     public TC_LoginDDT_002() throws IOException {
     }
-	@Test(groups = {"Chrome", "Firefox"}, dataProvider="LoginData")
+	@Test(dataProvider="LoginData")
 	public void loginDDT(String username, String password) throws InterruptedException
 	{
 		LoginPage lp=new LoginPage(driver);

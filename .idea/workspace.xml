@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Updated the cron jobs">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Adding groups to avoid running in the other browser.">
+      <change afterPath="$PROJECT_DIR$/TestNG_firefox.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/actions.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/actions.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG_chrome.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TC/TC_AddCustomerTest_003.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TC/TC_AddCustomerTest_003.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TC/TC_LoginDDT_002.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TC/TC_LoginDDT_002.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TC/TC_LoginTest_001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TC/TC_LoginTest_001.java" afterDir="false" />
@@ -265,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678271516659</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Adding groups to avoid running in the other browser.">
+      <created>1678273135294</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1678273135294</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,6 +309,7 @@
     <MESSAGE value="Include parallel Testing2" />
     <MESSAGE value="Include parallel Testing3" />
     <MESSAGE value="Updated the cron jobs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the cron jobs" />
+    <MESSAGE value="Adding groups to avoid running in the other browser." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding groups to avoid running in the other browser." />
   </component>
 </project>

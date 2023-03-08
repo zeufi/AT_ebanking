@@ -12,7 +12,7 @@ public class TC_LoginTest_001 extends BaseClass{
     public TC_LoginTest_001() throws IOException {
     }
 
-    @Test(groups = {"Chrome", "Firefox"})
+    @Test
     @Parameters("browser")
     public void loginTest(String br) throws IOException {
         logger.info("============== TC_LoginTest_001 Started ================");

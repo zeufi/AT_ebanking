@@ -11,7 +11,7 @@ public class TC_AddCustomerTest_003 extends BaseClass
     public TC_AddCustomerTest_003() throws IOException {
     }
 
-	@Test(groups = {"Chrome", "Firefox"})
+	@Test
 	public void addNewCustomer() throws InterruptedException, IOException
 	{
 		LoginPage lp=new LoginPage(driver);
