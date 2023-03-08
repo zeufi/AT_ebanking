@@ -4,32 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Adding5 different testng files to avoid running in the other browser.">
+    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Adding the script file">
       <change beforePath="$PROJECT_DIR$/.github/workflows/actions.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/actions.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG-chrome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG-chrome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG-firefox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG-firefox.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/application.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/testlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/testlog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/testlog1.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/testlog1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/tr_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tr_script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TC.TC_AddCustomerTest_003.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TC.TC_AddCustomerTest_003.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TC.TC_LoginDDT_002.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-TC.TC_LoginDDT_002.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TC/TC_LoginDDT_002.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TC/TC_LoginDDT_002.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TC/TC_LoginTest_001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.03.07.12.19.40.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.03.07.12.24.31.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.03.07.12.24.59.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Test-Report-2023.03.07.12.44.31.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/tr_firefox_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tr_firefox_script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/tr_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tr_chrome_script.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +59,7 @@
       <recent name="$PROJECT_DIR$/drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/jojozeufack/Desktop/ebanking/TestNG-firefox.xml">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ebankingv1-master" />
       <method v="2">
@@ -124,8 +103,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="TestNG./Users/jojozeufack/Desktop/ebanking/TestNG-firefox.xml" />
         <item itemvalue="TestNG./Users/jojozeufack/Desktop/ebankingv1-master/TestNG.xml (1)" />
         <item itemvalue="TestNG./Users/jojozeufack/Desktop/ebankingv1-master/TestNG.xml" />
@@ -344,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678275490993</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Adding the script file">
+      <created>1678277885231</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1678277885232</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -359,7 +354,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated script files" />
     <MESSAGE value="Updated1 script files" />
     <MESSAGE value="Updated2 script files" />
     <MESSAGE value="Updated3 script files" />
@@ -384,6 +378,7 @@
     <MESSAGE value="Adding3 different testng files to avoid running in the other browser." />
     <MESSAGE value="Adding4 different testng files to avoid running in the other browser." />
     <MESSAGE value="Adding5 different testng files to avoid running in the other browser." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding5 different testng files to avoid running in the other browser." />
+    <MESSAGE value="Adding the script file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the script file" />
   </component>
 </project>
