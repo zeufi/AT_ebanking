@@ -1,7 +1,8 @@
 # docker compose version
 version: '3'
-# prometheus server and access port 9090
+
 services:
+# prometheus server and access port 9090
   prometheus:
     image: prom/prometheus
     expose:
