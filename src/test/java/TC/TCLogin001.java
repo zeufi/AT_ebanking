@@ -8,15 +8,17 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.LinkedList;
 
-public class TCLoginTest001 extends BaseClass{
-    public TCLoginTest001() throws IOException {
+public class TCLogin001 extends BaseClass {
+    public TCLogin001() throws IOException {
     }
 
     @Test
-    @Parameters("browser")
-    public void loginTest(String br) throws IOException {
+    @Parameters({"browser", "env"})
+    public void loginTest(String br, String env) throws IOException, InterruptedException {
         logger.info("============== TC_LoginTest_001 Started ================");
         logger.info("*************** URL is Open ********************");
+        logger.info("Browser parameter value is: " + br);
+        logger.info("Environment parameter value is: " + env);
         LoginPage lp = new LoginPage(driver);
         if (driver.getPageSource().contains("Your connection isn't private") ||
                 driver.getPageSource().contains("Your connection is not private")){
@@ -34,13 +36,11 @@ public class TCLoginTest001 extends BaseClass{
             }else if("chrome".equals(br)){
                 currentTitle.add("Guru99 Bank Manager HomePage");
             }
-
             System.out.println(driver.getTitle());
             if (driver.getTitle().equals(currentTitle.get(0))) {
                 Assert.assertTrue(true);
                 logger.info("*************** LoginTest Passed ********************");
             } else {
-
                 logger.info("*************** LoginTest Failed ********************");
                 captureScreen(driver,"loginTest");
 			    Assert.fail();

@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Adding browser and os metrics&#10;Updated">
+    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Adding browser and os metrics&#10;Updated1">
+      <change afterPath="$PROJECT_DIR$/pmd-ruleset.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/actions.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/actions.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/tr_firefox_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tr_firefox_script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNG-chrome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG-chrome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNG-firefox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG-firefox.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-BankingV1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/e-BankingV1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POM/AddCustomerPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TC/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TC/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TC/TCLoginTest001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TC/TC_AddCustomerTest_003.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TC/TC_LoginDDT_002.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/Readconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/Readconfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +50,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/jojozeufack/Desktop/ebanking",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jojozeufack/Desktop/ebanking&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -351,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678290380165</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Adding browser and os metrics&#10;Updated1">
+      <created>1678290897740</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1678290897740</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,7 +385,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated3 script files" />
     <MESSAGE value="FIX THE TestNG.xml files" />
     <MESSAGE value="Fix th TestNG.xml files" />
     <MESSAGE value="Fix1 th TestNG.xml files" />
@@ -391,6 +409,7 @@
     <MESSAGE value="Adding the script file" />
     <MESSAGE value="Adding browser and os metrics" />
     <MESSAGE value="Adding browser and os metrics&#10;Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding browser and os metrics&#10;Updated" />
+    <MESSAGE value="Adding browser and os metrics&#10;Updated1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding browser and os metrics&#10;Updated1" />
   </component>
 </project>

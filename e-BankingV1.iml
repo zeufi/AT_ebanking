@@ -4,6 +4,7 @@
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
@@ -75,7 +76,12 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.10.0" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.14.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:3.141.59" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:4.3.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auto.service:auto-service-annotations:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auto.service:auto-service:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auto:auto-common:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chromium-driver:4.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-json:4.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:3.141.59" level="project" />
     <orderEntry type="library" name="Maven: ru.yandex.qatools.ashot:ashot:1.5.4" level="project" />
@@ -96,5 +102,7 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.11" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Maven: com.github.stephenc.monte:monte-screen-recorder:0.7.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.zaproxy:zap-clientapi:1.11.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jdom:jdom:1.1.3" level="project" />
   </component>
 </module>

@@ -1,0 +1,32 @@
+The project have 2 branches:
+ - staging which is my default and protected branch used for tests in staging environment
+ - master which is used for tests in production environment.
+Because tests run in prod usually not contains all tests run in staging.
+In the master branch our all TestNG.xml files will contain only the tests enabled to run
+on prod environment and vice versa in the staging branch our all TestNG.xml files will
+contain only the tests enabled to run on staging environment.
+
+## How run tests locally
+-On Chrome
+mvn test -Pchrome -Denv=prod # Will run on the default env which is PROD
+mvn test -Pfirefox -Denv=staging# Will run on the SATGING env
+-On Firefox
+mvn test -Pfirefox -Denv=prod
+mvn test -Pfirefox -Denv=staging
+
+## api testing
+Have use da demo endpoint: https://reqres.in/api
+In job have already imported the collection and my Postman environment is in the root
+directory of the project
+
+## api security testing
+Follow the steps provide by the official pynt documentation:
+https://docs.pynt.io/documentation/intro/overview
+
+## How to run the website security test ###
+1.Download and install OWASP ZAP
+2.Start a ZAP Session
+3.On the terminal run:
+mvn clean test -Dsurefire.suiteXmlFiles=TestNG-chr-zapsectest.xml
+4.A report named "Guru99-zap-report.html" will be generated, and we can send it
+to Security team for further analysis

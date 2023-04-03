@@ -41,7 +41,7 @@ jobs:
           echo "STEP_ID=run-maven-tests-$browser" >> $GITHUB_ENV
       - name: Run tests with maven on chrome
         working-directory: .
-        run: mvn test -Dbrowser=chrome -Dtestngfile=TestNG-chrome.xml # pass the browser parameter to the Maven command
+        run: mvn test -Pchrome -Denv=staging # pass the browser parameter to the Maven command
       - name: Telemetry - Collect build data
         working-directory: .
         env:
@@ -80,7 +80,7 @@ jobs:
           echo "STEP_ID=run-maven-tests-$browser" >> $GITHUB_ENV
       - name: Run tests with maven on firefox
         working-directory: .
-        run: mvn test -Dbrowser=firefox -Dtestngfile=TestNG-firefox.xml # pass the browser parameter to the Maven command
+        run: mvn test -Pfirefox -Denv=staging # pass the browser parameter to the Maven command
       - name: Telemetry - Collect build data
         working-directory: .
         env:

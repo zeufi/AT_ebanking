@@ -3,10 +3,8 @@
 
 <suite name="MyTestSuite">
     <test name="BankingApp">
-        <parameter name="browser" value="firefox"/>
         <classes>
-<!--            <class name="TC.TCLogin001"/>-->
-            <class name="TC.TCRegistration002"/>
+            <class name="SecurityTest.ZapSecurityTest"/>
         </classes>
     </test>
 </suite>

@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite verbose="1" name="MyTestSuite">
-    <listeners>
-        <listener class-name="Utilities.Reporting"/>
-    </listeners>
-    <test verbose="2" name="BankingApp">
+<suite  name="MyTestSuite">
+    <test  name="BankingApp">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="TC.TCLoginTest001"/>
-            <class name="TC.TC_LoginDDT_002"/>
-            <class name="TC.TC_AddCustomerTest_003"/>
+            <class name="TC.TCLogin001"/>
         </classes>
     </test>
 </suite>

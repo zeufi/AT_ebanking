@@ -7,15 +7,24 @@ import java.util.Properties;
 
 public class Readconfig {
     Properties pro;
+    Properties pro_staging;
 
     public Readconfig() throws IOException {
-        File src = new File("./Configuration/config.properties");
-        FileInputStream fis = new FileInputStream(src);
+        File srcProd = new File("./Configuration/PROD/config.properties");
+        FileInputStream fis_Prod = new FileInputStream(srcProd);
         pro = new Properties();
-        pro.load(fis);
+        pro.load(fis_Prod);
+
+        File srcStaging = new File("./Configuration/STAGING/config.properties");
+        FileInputStream fisStaging = new FileInputStream(srcStaging);
+        pro_staging = new Properties();
+        pro_staging.load(fisStaging);
     }
     public String getAppURL(){
         return pro.getProperty("baseURL");
+    }
+    public String getAppURL_Staging(){
+        return pro_staging.getProperty("baseURL_Staging");
     }
     public String getusername(){
         return pro.getProperty("username");

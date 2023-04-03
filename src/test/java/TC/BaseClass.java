@@ -1,6 +1,7 @@
 package TC;
 
 import Utilities.Readconfig;
+import Utilities.RandomEmailGenerator;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
@@ -16,19 +17,20 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
-    /*public String baseURL = "https://demo.guru99.com/v4";
-    public String username = "mngr341648";
-    public String password = "Asuseby";*/
     Readconfig readconfig = new Readconfig();
+    RandomEmailGenerator randomEmailGenerator= new RandomEmailGenerator();
     public String baseURL = readconfig.getAppURL();
+    public String baseURL_Staging = readconfig.getAppURL_Staging();
     public String username = readconfig.getusername();
     public String password = readconfig.getpassword();
+    public String email = randomEmailGenerator.generateEmail();
 
     public static WebDriver driver;
     public static Logger logger;
@@ -36,9 +38,9 @@ public class BaseClass {
     public BaseClass() throws IOException {
     }
 
-    @Parameters("browser")
-    @BeforeClass
-    public void setup(String br){
+    @Parameters({"browser", "env"})
+    @BeforeTest
+    public void setup(String br, String env){
         logger = Logger.getLogger("eBanking");
         PropertyConfigurator.configure("log4j.properties");
         String driverExtention = "";
@@ -51,19 +53,30 @@ public class BaseClass {
         } else if ("edge".equals(br)) {
             System.setProperty("webdriver.edge.driver", readconfig.getedgepath() + driverExtention);
             driver = new EdgeDriver();
-        } else {
+        } else if ("chrome".equals(br)){
             System.setProperty("webdriver.chrome.driver", readconfig.getchromepath() + driverExtention);
+//            System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+//            System.setProperty("webdriver.chrome.driver.wait", "30");
             driver = new ChromeDriver(getChromeOptions());
         }
         //System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\drivers\\msedgedriver.exe");
 
-        driver.get(baseURL);
+        if ("staging".equals(env)) {
+            driver.get(baseURL_Staging);
+        } else if("prod".equals(env)) {
+            driver.get(baseURL);
+        }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
     private ChromeOptions getChromeOptions(){
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("disable-infobars");
+        options.addArguments("--no-sandbox");
+//        options.addArguments("--user-data-dir=/tmp/chrome-data");
+        options.addArguments("--headless");
+//        options.setBinary("/usr/bin/google-chrome");    //chrome binary location
+        options.addArguments("--disable-dev-shm-usage");
+
         // Default headless mode off, set to true based on env var
         var headless = Boolean.parseBoolean(System.getenv("HEADLESS_CHROME")) | false;
         options.setHeadless(headless);
@@ -71,7 +84,7 @@ public class BaseClass {
     }
     private FirefoxOptions getFirefoxOptions(){
         FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("-headless");
+        options.addArguments("--headless");
         // Default headless mode off, set to true based on env var
         var headless = Boolean.parseBoolean(System.getenv("HEADLESS_FIREFOX")) | false;
         options.setHeadless(headless);
