@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Adding browser profile and os metrics.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG-chrome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG-chrome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/chromedriver-linux" beforeDir="false" afterPath="$PROJECT_DIR$/resources/chromedriver-linux" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,7 +367,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680515570927</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Adding browser profile and os metrics.">
+      <created>1680516052389</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1680516052389</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Adding browser profile and os metrics.">
+      <created>1680516342623</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1680516342623</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
