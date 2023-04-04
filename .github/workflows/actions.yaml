@@ -59,7 +59,7 @@ jobs:
       RUNNER_OS: true
       HEADLESS_FIREFOX: true
       BUILDEVENT_FILE: './buildevents.txt'
-
+      ENVIRONMENT: 'staging'
     steps:
       - name: Set start time
         run: echo "START_TIME=$(date +%s)" >> $GITHUB_ENV
