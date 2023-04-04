@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Fix missing Chrome collect data.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/tr_chrome_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tr_chrome_script.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/tr_firefox_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tr_firefox_script.sh" afterDir="false" />
     </list>
@@ -413,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680596767139</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Fix missing Chrome collect data.">
+      <created>1680597320430</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1680597320430</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
