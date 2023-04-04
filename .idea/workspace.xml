@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="Fix missing Chrome collect data.">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/actions.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/actions.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG-chrome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG-chrome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG-firefox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG-firefox.xml" afterDir="false" />
+    <list default="true" id="3db1e168-3b2e-4516-bcef-66f022202007" name="Changes" comment="First Commit On Prod.">
+      <change beforePath="$PROJECT_DIR$/resources/tr_firefox_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tr_firefox_script.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680605166152</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="First Commit On Prod.">
+      <created>1680613103062</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1680613103062</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,7 +449,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fix2 th TestNG.xml files" />
     <MESSAGE value="Fix3 the TestNG.xml files" />
     <MESSAGE value="Fix4 the TestNG.xml files" />
     <MESSAGE value="Fix5 the TestNG.xml files" />
@@ -470,6 +473,7 @@
     <MESSAGE value="Adding browser profile and os metrics." />
     <MESSAGE value="Updated." />
     <MESSAGE value="Fix missing Chrome collect data." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix missing Chrome collect data." />
+    <MESSAGE value="First Commit On Prod." />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit On Prod." />
   </component>
 </project>
