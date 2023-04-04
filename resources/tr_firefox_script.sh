@@ -12,11 +12,11 @@ TEST_RESULTS_LOCATION="${1:-/home/runner/work/ebanking/ebanking/target/surefire-
 TEST_RESULTS_STRING=$(cat "${TEST_RESULTS_LOCATION}/testng-results.xml" | grep "<testng-results")
 
 cat <<EOF | curl --data-binary @- "${PUSHGATEWAY_URL}"/metrics/job/github_actions
-github_actions_ignored_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{ env.ENVIRONMENT }}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $2 }')
-github_actions_total_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{ env.ENVIRONMENT }}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $4 }')
-github_actions_passed_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{ env.ENVIRONMENT }}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $6 }')
-github_actions_failed_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{ env.ENVIRONMENT }}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $8 }')
-github_actions_skipped_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{ env.ENVIRONMENT }}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $10 }')
+github_actions_ignored_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{env.ENVIRONMENT}}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $2 }')
+github_actions_total_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{env.ENVIRONMENT}}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $4 }')
+github_actions_passed_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{env.ENVIRONMENT}}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $6 }')
+github_actions_failed_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{env.ENVIRONMENT}}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $8 }')
+github_actions_skipped_tests_firefox{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}",actor="${GITHUB_ACTOR}",branch="${GITHUB_REF}",os="${RUNNER_OS}",browser="${GITHUB_JOB}",environment="${{env.ENVIRONMENT}}"} $(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $10 }')
 EOF
 
 # shellcheck disable=SC2129
