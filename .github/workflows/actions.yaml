@@ -20,6 +20,7 @@ jobs:
       RUNNER_OS: true
       HEADLESS_CHROME: true
       BUILDEVENT_FILE: './buildevents.txt'
+      ENVIRONMENT: 'prod' # add this line to set the environment variable
 
     steps:
       - name: Set start time
@@ -41,7 +42,7 @@ jobs:
           echo "STEP_ID=run-maven-tests-$browser" >> $GITHUB_ENV
       - name: Run tests with maven on chrome
         working-directory: .
-        run: mvn test -Pchrome -Denv=staging # pass the browser parameter to the Maven command
+        run: mvn test -Pchrome -Denv=$ENVIRONMENT # pass the browser parameter to the Maven command
       - name: Telemetry - Collect build data
         working-directory: .
         env:
@@ -59,6 +60,7 @@ jobs:
       RUNNER_OS: true
       HEADLESS_FIREFOX: true
       BUILDEVENT_FILE: './buildevents.txt'
+      ENVIRONMENT: 'prod'
 
     steps:
       - name: Set start time
@@ -80,7 +82,7 @@ jobs:
           echo "STEP_ID=run-maven-tests-$browser" >> $GITHUB_ENV
       - name: Run tests with maven on firefox
         working-directory: .
-        run: mvn test -Pfirefox -Denv=staging  # pass the browser parameter to the Maven command
+        run: mvn test -Pfirefox -Denv=$ENVIRONMENT  # pass the browser parameter to the Maven command
       - name: Telemetry - Collect build data
         working-directory: .
         env:

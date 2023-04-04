@@ -5,7 +5,7 @@
     <test  name="BankingApp">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="TC.TCRegistration002"/>
+            <class name="TC.TCLogin001"/>
         </classes>
     </test>
 </suite>
