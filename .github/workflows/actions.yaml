@@ -46,7 +46,7 @@ jobs:
         working-directory: .
         env:
           PUSHGATEWAY_URL: ${{ secrets.PUSHGATEWAY_URL }}
-          BUILDEVENT_FILE: ../${{ env.BUILDEVENT_FILE }}
+          BUILDEVENT_FILE: ${{ env.BUILDEVENT_FILE }}
         if: always()
         run: |
           echo "github_actions_total_duration_chrome $(expr $(date +%s) - ${START_TIME})" | curl --data-binary @- ${PUSHGATEWAY_URL}/metrics/job/github_actions
@@ -85,7 +85,7 @@ jobs:
         working-directory: .
         env:
           PUSHGATEWAY_URL: ${{ secrets.PUSHGATEWAY_URL }}
-          BUILDEVENT_FILE: ../${{ env.BUILDEVENT_FILE }}
+          BUILDEVENT_FILE: ${{ env.BUILDEVENT_FILE }}
         if: always()
         run: |
           echo "github_actions_total_duration_firefox $(expr $(date +%s) - ${START_TIME})" | curl --data-binary @- ${PUSHGATEWAY_URL}/metrics/job/github_actions
