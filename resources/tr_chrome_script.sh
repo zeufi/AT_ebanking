@@ -11,7 +11,7 @@ TEST_RESULTS_LOCATION="${1:-/home/runner/work/ebanking/ebanking/target/surefire-
 # shellcheck disable=SC2002
 TEST_RESULTS_STRING=$(cat "${TEST_RESULTS_LOCATION}/testng-results.xml" | grep "<testng-results")
 
-cat <<EOF | curl --data-binary @- ${PUSHGATEWAY_URL}/metrics/job/github_actions
+cat <<EOF | curl --data-binary @- "${PUSHGATEWAY_URL}"/metrics/job/github_actions
 github_actions_ignored_tests_chrome{action_id="${GITHUB_RUN_NUMBER}", commit="${GITHUB_SHA}", actor="${GITHUB_ACTOR}", branch="${GITHUB_REF}"}, os="${RUNNER_OS}", browser="${GITHUB_JOB}"} $(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $2 }')
 github_actions_total_tests_chrome{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}", actor="${GITHUB_ACTOR}", branch="${GITHUB_REF}", os="${RUNNER_OS}", browser="${GITHUB_JOB}"} $(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $4 }')
 github_actions_passed_tests_chrome{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}", actor="${GITHUB_ACTOR}", branch="${GITHUB_REF}", os="${RUNNER_OS}", browser="${GITHUB_JOB}"} $(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $6 }')
@@ -19,8 +19,9 @@ github_actions_failed_tests_chrome{action_id="${GITHUB_RUN_NUMBER}",commit="${GI
 github_actions_skipped_tests_chrome{action_id="${GITHUB_RUN_NUMBER}",commit="${GITHUB_SHA}", actor="${GITHUB_ACTOR}", branch="${GITHUB_REF}", os="${RUNNER_OS}", browser="${GITHUB_JOB}"} $(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $10 }')
 EOF
 
-echo " gha.maventest.ignored=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $2 }')" >> $BUILDEVENT_FILE
-echo " gha.maventest.total=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $4 }')" >> $BUILDEVENT_FILE
-echo " gha.maventest.passed=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $6 }')" >> $BUILDEVENT_FILE
-echo " gha.maventest.failed=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $8 }')" >> $BUILDEVENT_FILE
-echo " gha.maventest.skipped=$(echo ${TEST_RESULTS_STRING} | awk -F'"' '{ print $10 }')" >> $BUILDEVENT_FILE
+# shellcheck disable=SC2129
+echo " gha.maventest.ignored=$(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $2 }')" >> "$BUILDEVENT_FILE"
+echo " gha.maventest.total=$(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $4 }')" >> "$BUILDEVENT_FILE"
+echo " gha.maventest.passed=$(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $6 }')" >> "$BUILDEVENT_FILE"
+echo " gha.maventest.failed=$(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $8 }')" >> "$BUILDEVENT_FILE"
+echo " gha.maventest.skipped=$(echo "${TEST_RESULTS_STRING}" | awk -F'"' '{ print $10 }')" >> "$BUILDEVENT_FILE"
