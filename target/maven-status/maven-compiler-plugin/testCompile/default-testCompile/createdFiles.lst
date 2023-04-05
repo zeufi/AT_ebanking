@@ -1,8 +1,10 @@
 Utilities/Reporting.class
-TC/TC_AddCustomerTest_003.class
 Utilities/XLUtils.class
 TC/BaseClass.class
-POM/AddCustomerPage.class
-TC/TC_LoginDDT_002.class
+TC/TCRegistration002.class
+POM/RegistrationPage.class
+SecurityTest/ZapSecurityTest.class
+Utilities/RandomEmailGenerator.class
+TC/TCLogin001.class
 Utilities/Readconfig.class
 POM/LoginPage.class

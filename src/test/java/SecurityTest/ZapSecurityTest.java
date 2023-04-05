@@ -56,7 +56,7 @@ public class ZapSecurityTest {
                 String title = "Guru99 ZAP Security Report";
                 String template = "traditional-html";
                 String description = "This is Guru99 ZAP Security Report";
-                String reportfilename = "/zap_scan/Guru99-zap-report.html";
+                String reportfilename = "Guru99-zap-report.html";
                 String reportdir = System.getProperty("user.dir");
 
                 // Generate the ZAP report
